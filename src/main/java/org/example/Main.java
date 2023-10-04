@@ -11,7 +11,9 @@ public class Main {
 
         ChessMaster chessMaster = new ChessMaster();
 
-        Position startPosition = new Position.Builder().x(-1).y(-1).build();
+        Position startPosition = new Position.Builder()
+                .x(Integer.parseInt(args[0]))
+                .y(Integer.parseInt(args[1])).build();
 
         int result = 0;
         try {
